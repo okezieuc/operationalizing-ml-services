@@ -48,3 +48,9 @@ source .devops/bin/activate
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+Scripts Contained
+* `run_docker.sh` build the docker image and starts a local server. It maps port 80 to port 8000
+* `make_prediction.sh` calls our Machine learning API endpoint with sample data to verify that it works.
+* `run_kubernetes.sh` deploys our ML server artifact from Dockerhub to a kubernetes cluster.
+* `upload_docker.sh` tags the docker image and pushes it to Dockerhub
